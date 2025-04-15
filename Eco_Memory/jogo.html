@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMemory</title>
+
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jogo.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="informacoes">
+        <span class="pontuacao">Pontuação: 0</span>
+        <span class="timer">Tempo: <span id="tempo-restante">2:00</span></span>
+    </div>
+
+    <div class="imagens-latao">
+        <ul>
+            <li>
+                <img src="imagens/LataoAzul - Copia.png"  id="lixeira-azul" draggable="true">
+            </li>
+            <li>
+                <img src="imagens/LataoAmarelo - Copia.png" id="lixeira-amarela" draggable="true">
+            </li>
+            <li>
+                <img src="imagens/LataoVermelho - Copia.png" id="lixeira-vermelha" draggable="true">
+            </li>
+            <li>
+                <img src="imagens/LataoVerde - Copia.png" id="lixeira-verde" draggable="true">
+            </li>
+            <li>
+                <img src="imagens/LataoMarrom - Copia.png" id="lixeira-marrom" draggable="true">
+            </li>
+        </ul>
+    </div>
+    
+    <div class="grid"></div>
+
+    <div id="fim-de-jogo" class="fim-de-jogo">
+        <div class="conteudo">
+            <h2 id="titulo-fim-de-jogo"></h2>
+            <p id="mensagem-fim-de-jogo"></p>
+            <button id="jogar-novamente">Jogar Novamente</button>
+            <button id="sair">Sair</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
